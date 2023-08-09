@@ -15,8 +15,8 @@ const User = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
-        select: false,
+        required: true, // não pode ser vazio
+        select: false, // não retorna a senha
     },
     created_at: {
         type: Date,
